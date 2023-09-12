@@ -24,7 +24,7 @@ public class Bauer implements Figur {
 	public Set<Integer> möglichkeiten(Map<Integer, Figur> figuren) {
 		int schlagL;
 		int schlagR;
-		if (color == 'b') { // vorne
+		if (color == 'w') { // vorne
 			schlagL = position - 11;
 			schlagR = position - 9;
 			if (!beenmoved && figuren.get(position - 20) == null && figuren.get(position - 10) == null)

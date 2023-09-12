@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMain">
    <children>
       <GridPane fx:id="gridPaneGitter" gridLinesVisible="true" layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="372.0">
         <columnConstraints>
@@ -101,30 +101,30 @@
          <Pane fx:id="paneZelle_76" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DCDCDC;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
          </children>
       </GridPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c6c6" height="107.0" layoutX="400.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5c6c6" height="107.0" layoutX="400.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
-      <Button fx:id="buttonRetry" layoutX="529.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="47.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="54.0" style="-fx-background-color: #E9967A;" text="Reset" />
-      <Text fill="#ff9300" layoutX="408.0" layoutY="49.0" stroke="#f5f5f0" strokeType="OUTSIDE" text="Gold" wrappingWidth="130.12353515625">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="107.0" layoutX="400.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="107.0" layoutX="400.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+      <Button fx:id="buttonRetry" layoutX="467.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="47.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="54.0" style="-fx-background-color: #E9967A;" text="Reset" />
+      <Text fill="#ff9300" layoutX="410.0" layoutY="51.0" stroke="#f5f5f0" strokeType="OUTSIDE" text="Gold" wrappingWidth="130.12353515625">
          <font>
-            <Font name="Silom" size="26.0" />
+            <Font name="04b 30" size="26.0" />
          </font>
       </Text>
-      <Text layoutX="408.0" layoutY="174.0" stroke="#f8f8f1" strokeType="OUTSIDE" text="Black" wrappingWidth="130.12353515625">
+      <Text layoutX="410.0" layoutY="175.0" stroke="#f8f8f1" strokeType="OUTSIDE" text="Black" wrappingWidth="132.41778211904307">
          <font>
-            <Font name="Silom" size="26.0" />
+            <Font name="04b 30" size="26.0" />
          </font>
       </Text>
-      <Text fx:id="punkt_playerW" layoutX="528.0" layoutY="47.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="P_W">
+      <Text fx:id="punkt_playerW" layoutX="539.0" layoutY="60.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="P_W">
          <font>
-            <Font name="Silom" size="22.0" />
+            <Font name="04b 30" size="14.0" />
          </font>
          <effect>
             <Bloom threshold="0.0" />
          </effect>
       </Text>
-      <Text fx:id="punkt_playerB" layoutX="532.0" layoutY="174.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="P_B">
+      <Text fx:id="punkt_playerB" layoutX="540.0" layoutY="184.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="P_B">
          <font>
-            <Font name="Silom" size="22.0" />
+            <Font name="04b 30" size="14.0" />
          </font>
          <effect>
             <Bloom threshold="0.0" />
@@ -185,7 +185,7 @@
             <Pane fx:id="paneZelleB_2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
             <Pane fx:id="paneZelleB_3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
             <Pane fx:id="paneZelleB_4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
-            <Pane fx:id="paneZelleB_0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" />
+            <Pane fx:id="paneZelleB_5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" />
             <Pane fx:id="paneZelleB_6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" />
             <Pane fx:id="paneZelleB_7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" />
             <Pane fx:id="paneZelleB_8" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
@@ -198,6 +198,7 @@
             <Pane fx:id="paneZelleB_15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <Button fx:id="buttonTurn" layoutX="467.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="47.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="54.0" style="-fx-background-color: #E9967A;" text="Turn" />
+      <Button fx:id="buttonLeave" layoutX="532.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="47.0" mnemonicParsing="false" onAction="#switchStartScreen" prefHeight="47.0" prefWidth="54.0" style="-fx-background-color: #E9967A;" text="Leave" />
+      <Button fx:id="buttonTurn" layoutX="400.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="47.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="54.0" style="-fx-background-color: #E9967A;" text="Turn" />
    </children>
 </AnchorPane>

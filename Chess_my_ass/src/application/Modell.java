@@ -15,6 +15,7 @@ import figuren.Turm;
 public class Modell {
 
 	private Map<Integer, Figur> figuren = null;
+	private char curPlayer = 'w';
 
 	public Modell(char playerOne, char playerTwo) {
 		this.figuren = new HashMap<Integer, Figur>();
@@ -70,6 +71,18 @@ public class Modell {
 		figuren.put(pos, figur);
 	}
 
+	public char getcurPlayer() {
+		return curPlayer;
+	}
+
+	public void switchcurPlayer() {
+		if (curPlayer == 'w') {
+			curPlayer = 'b';
+		} else {
+			curPlayer = 'w';
+		}
+	}
+
 	public Set<Integer> possability(int feld) {
 		Set<Integer> possibilities = new HashSet<>();
 		if (figuren.get(feld) != null) {
@@ -87,7 +100,8 @@ public class Modell {
 				if (wntPos == curPos + 2 || wntPos == curPos - 2) {
 					int curTurmPos = wntPos == curPos + 2 ? wntPos + 2 : wntPos - 1;
 					Figur figTurm = figuren.get(curTurmPos);
-					figuren.put(wntPos == curPos + 2 ? wntPos - 1 : wntPos + 1, figTurm);
+					figTurm.setPosition(wntPos == curPos + 2 ? wntPos - 1 : wntPos + 1);
+					figuren.put(figTurm.getPosition(), figTurm);
 					figuren.put(curTurmPos, null);
 				}
 			}
