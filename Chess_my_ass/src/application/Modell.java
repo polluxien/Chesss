@@ -54,12 +54,12 @@ public class Modell {
 		figuren.put(76, new Pferdchen(76, playerOne));
 
 		// König
-		figuren.put(3, new König(3, playerTwo));
-		figuren.put(73, new König(73, playerOne));
+		figuren.put(4, new König(4, playerTwo));
+		figuren.put(74, new König(74, playerOne));
 
 		// Dame
-		figuren.put(4, new Dame(4, playerTwo));
-		figuren.put(74, new Dame(74, playerOne));
+		figuren.put(3, new Dame(3, playerTwo));
+		figuren.put(73, new Dame(73, playerOne));
 
 	}
 
@@ -76,11 +76,8 @@ public class Modell {
 	}
 
 	public void switchcurPlayer() {
-		if (curPlayer == 'w') {
-			curPlayer = 'b';
-		} else {
-			curPlayer = 'w';
-		}
+		char player = curPlayer == 'w' ?  'b' : 'w';
+		this.curPlayer = player;
 	}
 
 	public Set<Integer> possability(int feld) {
@@ -98,7 +95,7 @@ public class Modell {
 			// Rocharde
 			if (fig instanceof König) {
 				if (wntPos == curPos + 2 || wntPos == curPos - 2) {
-					int curTurmPos = wntPos == curPos + 2 ? wntPos + 2 : wntPos - 1;
+					int curTurmPos = wntPos == curPos + 2 ? wntPos + 1 : wntPos - 2;
 					Figur figTurm = figuren.get(curTurmPos);
 					figTurm.setPosition(wntPos == curPos + 2 ? wntPos - 1 : wntPos + 1);
 					figuren.put(figTurm.getPosition(), figTurm);

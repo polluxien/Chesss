@@ -35,38 +35,38 @@
           <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="46.5" vgrow="SOMETIMES" />
         </rowConstraints>    
                  <children>
-                <Pane fx:id="paneZelle_00" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" />
-         <Pane fx:id="paneZelle_02" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="2" />
-         <Pane fx:id="paneZelle_04" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="4" />
-         <Pane fx:id="paneZelle_06" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="6" />
-         <Pane fx:id="paneZelle_11" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-         <Pane fx:id="paneZelle_13" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-         <Pane fx:id="paneZelle_15" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-         <Pane fx:id="paneZelle_17" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-                  <Pane fx:id="paneZelle_20" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.rowIndex="2" />
-         <Pane fx:id="paneZelle_22" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-         <Pane fx:id="paneZelle_24" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-         <Pane fx:id="paneZelle_26" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-         <Pane fx:id="paneZelle_31" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-         <Pane fx:id="paneZelle_33" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-         <Pane fx:id="paneZelle_35" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-         <Pane fx:id="paneZelle_37" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                  <Pane fx:id="paneZelle_40" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.rowIndex="4" />
-         <Pane fx:id="paneZelle_42" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-         <Pane fx:id="paneZelle_44" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-         <Pane fx:id="paneZelle_46" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-         <Pane fx:id="paneZelle_51" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-         <Pane fx:id="paneZelle_53" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-         <Pane fx:id="paneZelle_55" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-         <Pane fx:id="paneZelle_57" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-                 <Pane fx:id="paneZelle_60" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.rowIndex="6" />
-         <Pane fx:id="paneZelle_62" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-         <Pane fx:id="paneZelle_64" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-         <Pane fx:id="paneZelle_66" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-         <Pane fx:id="paneZelle_71" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-         <Pane fx:id="paneZelle_73" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-         <Pane fx:id="paneZelle_75" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-         <Pane fx:id="paneZelle_77" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: /Users/bennet/workspace.STUDIUM_02/Chess_my_ass/bin/Texturen/Feld_rot;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                <Pane fx:id="paneZelle_00" prefHeight="200.0" prefWidth="200.0" />
+         <Pane fx:id="paneZelle_02" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+         <Pane fx:id="paneZelle_04" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
+         <Pane fx:id="paneZelle_06" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" />
+         <Pane fx:id="paneZelle_11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <Pane fx:id="paneZelle_13" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         <Pane fx:id="paneZelle_15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+         <Pane fx:id="paneZelle_17" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Pane fx:id="paneZelle_20" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+         <Pane fx:id="paneZelle_22" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         <Pane fx:id="paneZelle_24" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+         <Pane fx:id="paneZelle_26" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+         <Pane fx:id="paneZelle_31" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <Pane fx:id="paneZelle_33" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         <Pane fx:id="paneZelle_35" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+         <Pane fx:id="paneZelle_37" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <Pane fx:id="paneZelle_40" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+         <Pane fx:id="paneZelle_42" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         <Pane fx:id="paneZelle_44" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+         <Pane fx:id="paneZelle_46" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+         <Pane fx:id="paneZelle_51" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         <Pane fx:id="paneZelle_53" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+         <Pane fx:id="paneZelle_55" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+         <Pane fx:id="paneZelle_57" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                 <Pane fx:id="paneZelle_60" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
+         <Pane fx:id="paneZelle_62" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+         <Pane fx:id="paneZelle_64" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+         <Pane fx:id="paneZelle_66" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+         <Pane fx:id="paneZelle_71" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         <Pane fx:id="paneZelle_73" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+         <Pane fx:id="paneZelle_75" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+         <Pane fx:id="paneZelle_77" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
          <Pane fx:id="paneZelle_01" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DCDCDC;" GridPane.columnIndex="1" />
          <Pane fx:id="paneZelle_03" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DCDCDC;" GridPane.columnIndex="3" />
          <Pane fx:id="paneZelle_05" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DCDCDC;" GridPane.columnIndex="5" />
@@ -101,8 +101,8 @@
          <Pane fx:id="paneZelle_76" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DCDCDC;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
          </children>
       </GridPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="107.0" layoutX="400.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="107.0" layoutX="400.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+      <Rectangle fx:id="rectangelWhite" arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="107.0" layoutX="400.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+      <Rectangle fx:id="rectangelBlack" arcHeight="5.0" arcWidth="5.0" fill="GAINSBORO" height="107.0" layoutX="400.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
       <Button fx:id="buttonRetry" layoutX="467.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="47.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="54.0" style="-fx-background-color: #E9967A;" text="Reset" />
       <Text fill="#ff9300" layoutX="410.0" layoutY="51.0" stroke="#f5f5f0" strokeType="OUTSIDE" text="Gold" wrappingWidth="130.12353515625">
          <font>

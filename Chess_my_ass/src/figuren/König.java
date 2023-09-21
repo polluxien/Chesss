@@ -37,16 +37,16 @@ public class König implements Figur {
 			}
 		}
 		if(!beenmoved) {  // Rocharde 
-			Figur turm = figuren.get(position + 4);
+			Figur turm = figuren.get(position - 4);
 			if(turm instanceof Turm) {
-				if(!(turm.getifmoved()) && figuren.get(position + 1) == null && figuren.get(position + 2) == null && figuren.get(position + 3) == null) {
-					mg.add(position + 2);
+				if(!(turm.getifmoved()) && figuren.get(position - 1) == null && figuren.get(position - 2) == null && figuren.get(position - 3) == null) {
+					mg.add(position - 2);
 				}
 			}
-			turm = figuren.get(position - 3);
+			turm = figuren.get(position + 3);
 			if(turm instanceof Turm) {
-				if(!turm.getifmoved() && figuren.get(position - 1) == null && figuren.get(position - 2) == null) {
-					mg.add(position - 2);
+				if(!turm.getifmoved() && figuren.get(position + 1) == null && figuren.get(position + 2) == null) {
+					mg.add(position + 2);
 				}
 			}
 			

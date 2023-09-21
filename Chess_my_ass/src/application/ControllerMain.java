@@ -23,6 +23,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
@@ -46,6 +48,12 @@ public class ControllerMain implements Initializable, EventHandler {
 
 	@FXML
 	Button buttonLeave;
+
+	@FXML
+	Rectangle rectangelWhite;
+
+	@FXML
+	Rectangle rectangelBlack;
 
 	@FXML
 	Text punkt_playerW;
@@ -457,13 +465,28 @@ public class ControllerMain implements Initializable, EventHandler {
 
 		System.out.print("initialize wurde ausgeführt");
 		schachbretterstellung(Spiel.getFigurenmap());
+
+		rectangelWhite.setStrokeWidth(3);
+		rectangelBlack.setStrokeWidth(3);
+		switchPlayerBoarder();
 	}
 
-	int punkteW = 0;
-	int punkteB = 0;
+	// setzt die Boarder beim Spieler welcher grade am Zug ist zu grün
+	private void switchPlayerBoarder() {
+		if (Spiel.getcurPlayer() == 'w') {
+			rectangelWhite.setStroke(Color.rgb(143, 188, 143));
+			rectangelBlack.setStroke(Color.WHITE);
+		} else {
+			rectangelWhite.setStroke(Color.WHITE);
+			rectangelBlack.setStroke(Color.rgb(143, 188, 143));
+		}
+	}
+
+	private int punkteW = 0;
+	private int punkteB = 0;
 
 	// setzt beide Punktestände wieder zurück
-	public void resetPunkte() {
+	private void resetPunkte() {
 		punkt_playerW.setText("00");
 		punkt_playerB.setText("00");
 
@@ -472,7 +495,7 @@ public class ControllerMain implements Initializable, EventHandler {
 	}
 
 	// addiert die gewonennen Punkte zum gesamt Punktestand und gibt den Höheren aus
-	public void setPunktestand(char player, int punkte) {
+	private void setPunktestand(char player, int punkte) {
 		if (player == 'w') {
 			punkteW -= punkte;
 		} else {
@@ -487,10 +510,10 @@ public class ControllerMain implements Initializable, EventHandler {
 	}
 
 	// gibt an auf welcher Seite sich das Brett grade befindet
-	boolean isturned = false;
+	private boolean isturned = false;
 
 	// Rotiert das Brett um 180 Grad und wechselt status der isturned Variable
-	public void boardRotation(Map<Integer, Figur> figuren) {
+	private void boardRotation(Map<Integer, Figur> figuren) {
 		Rotate rotateGrid = new Rotate(180, gridPaneGitter.getWidth() / 2, gridPaneGitter.getHeight() / 2);
 		gridPaneGitter.getTransforms().add(rotateGrid);
 		if (isturned)
@@ -511,7 +534,7 @@ public class ControllerMain implements Initializable, EventHandler {
 	}
 
 	// Iteriert die ganze Map und gibt das auf dem Spielfeld wieder
-	public void schachbretterstellung(Map<Integer, Figur> figuren) {
+	private void schachbretterstellung(Map<Integer, Figur> figuren) {
 		for (Integer cor : figuren.keySet()) {
 			String corString = (cor < 10) ? "0" + cor.toString() : cor.toString();
 			Pane paneZelle = (Pane) gridPaneGitter.lookup("#paneZelle_" + corString);
@@ -547,7 +570,7 @@ public class ControllerMain implements Initializable, EventHandler {
 		}
 	}
 
-	public void schachbrettreset() {
+	private void schachbrettreset() {
 		Map<Integer, Figur> figmap = Spiel.getFigurenmap();
 		for (Integer figkey : figmap.keySet()) {
 			figmap.put(figkey, null);
@@ -555,11 +578,11 @@ public class ControllerMain implements Initializable, EventHandler {
 		schachbretterstellung(figmap);
 	}
 
-	int listpositionwhite = 0;
-	int listpositionblack = 0;
+	private int listpositionwhite = 0;
+	private int listpositionblack = 0;
 
 	// Zeigt die Gewonnen Spielfiguren vom Gegner an
-	public void figurenForPlayersDarstellung(Figur fig) {
+	private void figurenForPlayersDarstellung(Figur fig) {
 		Pane paneZelle;
 		if (fig.getColor() == 'b') {
 			paneZelle = (Pane) gridPaneGitterWhite.lookup("#paneZelleW_" + listpositionwhite);
@@ -586,7 +609,7 @@ public class ControllerMain implements Initializable, EventHandler {
 	}
 
 	// setzt die darstellung der Gewonenne figuren zurück
-	public void figurenForPlayersReset() {
+	private void figurenForPlayersReset() {
 		Pane paneZelle = null;
 		for (int i = listpositionwhite; i >= 0; i--) {
 			paneZelle = (Pane) gridPaneGitterWhite.lookup("#paneZelleW_" + i);
@@ -604,7 +627,7 @@ public class ControllerMain implements Initializable, EventHandler {
 	}
 
 	// entefernt die spielbaren möglichkeiten der Figur
-	public void möglichkeitenLöschung() {
+	private void möglichkeitenLöschung() {
 		List<ImageView> imageViewsToRemove = new ArrayList<>();
 		for (Integer mgZahl : mg) {
 			String mgZahlString = (mgZahl < 10) ? "0" + mgZahl.toString() : mgZahl.toString();
@@ -630,7 +653,7 @@ public class ControllerMain implements Initializable, EventHandler {
 	}
 
 	// zeigt die möglichen spielzüge einer Spielfigur an
-	public void möglichkeitenDarstellung(Map<Integer, Figur> figuren) {
+	private void möglichkeitenDarstellung(Map<Integer, Figur> figuren) {
 		for (Integer mgZahl : mg) {
 			String mgZahlString = (mgZahl < 10) ? "0" + mgZahl.toString() : mgZahl.toString();
 			Pane paneZelle = (Pane) gridPaneGitter.lookup("#paneZelle_" + mgZahlString);
@@ -661,7 +684,8 @@ public class ControllerMain implements Initializable, EventHandler {
 
 	// speichert spielposition
 	// speichert derzeitigen spieler / true = weiß und false = schwarz
-	int curPos;
+	private int curPos;
+	private boolean switchautomaticly = false;
 
 	public void handlePaneZelle(MouseEvent event) {
 		Node zelle = (Node) event.getSource();
@@ -673,7 +697,8 @@ public class ControllerMain implements Initializable, EventHandler {
 		System.out.println(xy);
 
 		if (!mg.contains(xy) || mg == null) {
-			if (Spiel.getFigurenmap().get(xy) != null && Spiel.getFigurenmap().get(xy).getColor() == Spiel.getcurPlayer()) {
+			if (Spiel.getFigurenmap().get(xy) != null
+					&& Spiel.getFigurenmap().get(xy).getColor() == Spiel.getcurPlayer()) {
 				möglichkeitenLöschung();
 				curPos = xy;
 				mg = Spiel.possability(curPos); // möglichkeiten gucken
@@ -693,6 +718,10 @@ public class ControllerMain implements Initializable, EventHandler {
 				}
 				Spiel.move(curPos, xy);
 				Spiel.switchcurPlayer();
+				switchPlayerBoarder();
+				if (switchautomaticly) {
+					boardRotation(Spiel.getFigurenmap());
+				}
 			}
 			möglichkeitenLöschung();
 			schachbretterstellung(Spiel.getFigurenmap());
@@ -703,13 +732,16 @@ public class ControllerMain implements Initializable, EventHandler {
 	@Override
 	public void handle(Event arg0) {
 		if (arg0.getSource().equals(buttonRetry)) {
+//			if (arg0.getSource().) {
+//				
+//			}
 			schachbrettreset();
 			Spiel = new Modell('w', 'b');
 			figurenForPlayersReset();
 			resetPunkte();
 			schachbretterstellung(Spiel.getFigurenmap());
 			mg.clear();
-			;
+			switchPlayerBoarder();
 		}
 		if (arg0.getSource().equals(buttonTurn)) {
 			boardRotation(Spiel.getFigurenmap());
